@@ -9,7 +9,7 @@ def init_connection():
     #url: str = st.secrets['supabase_url']
     #key: str = st.secrets['supabase_key']
     #connection = connect(s3_staging_dir="s3://atommych-datalake-dev/staging/streamlit/", region_name="eu-west-3")
-    connection = connect(schema_name="datalake_raw", work_group="atommych-athena-workgroup-dev", profile_name="personal", region_name="eu-west-3")
+    connection = connect(schema_name="datalake_raw", work_group="atommych-athena-workgroup-dev", region_name="eu-west-3")
     return connection
 
 # Query the db
